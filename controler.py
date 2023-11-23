@@ -6,8 +6,8 @@ def login_validation(username, password):
     else:
         return False
     
-def user_registeration(username, password,name,role):
-    if models.create_user(username, password,name,role):
+def user_registeration(username, name, password, role):
+    if models.create_user(username, name, password, role):
         return True
     else:
         return False
